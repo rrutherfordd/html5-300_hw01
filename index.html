@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Assignment 1">
+
+  <title>Number Form</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<!--
+  -- Create a Web page with an input field where the user enters numbers.
+  -- Each time the user enters a number, update the display to show how many numbers have been entered, the sum of the numbers, and the average (mean) of the numbers.
+  -- There should be a Reset button that allows the user to start over with a new sequence of numbers.
+-->
+<body>
+  <h1>Number Form</h1>
+  <form name="acceptNumber">
+    Enter numbers here:
+    <input type="number" id="numberToSum" value=0>
+    <input type="submit" value="Submit" onclick="calcNumbers()">
+    <input type="reset" onclick="resetNumbers()">
+  </form>
+  <h3 id="countNumber">Count: </h3>
+  <h3 id="sumNumber">Sum: </h3>
+  <h3 id="averageNumber">Average: </h3>
+  <!-- JavaScript -->
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
